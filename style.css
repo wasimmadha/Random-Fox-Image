@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=ZCOOL+KuaiLe&display=swap");
+
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ================
+    Typography
+=================*/
+
+h1 {
+  font-size: 2rem;
+  padding: 1rem;
+  color: #e1cc4f;
+}
+
+/* ================
+    Element
+=================*/
+
+img {
+  object-fit: contain;
+  min-width: 300px;
+  width: 500px;
+  height: 400px;
+  padding-bottom: 1rem;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* ================
+    Layout 
+=================*/
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  width: 550px;
+  height: 550px;
+}
+
+.img-container {
+  min-width: 300px;
+  width: 500px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* button */
+
+.btn-container img {
+  width: 70px; /*width of your image*/
+  height: 20px; /*height of your image*/
+  padding: 0;
+  margin: 0;
+  min-width: 70px;
+  margin-bottom: 9px;
+}
+
+.btn-container {
+  align-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: #e1cc4f;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+.btn-container:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+.btn-container:hover * {
+  filter: invert(96%) sepia(40%) saturate(1516%) hue-rotate(331deg)
+    brightness(102%) contrast(76%);
+}
+
+/* Loader */
+
+.loader {
+  font-family: "ZCOOL KuaiLe", cursive;
+  font-size: 30px;
+  font-weight: 400;
+  color: #e1cc4f;
+}
+
+.loader::after {
+  content: "\2026";
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: bottom;
+  animation: dots steps(4, end) 2s infinite;
+  width: 0px;
+}
+
+@keyframes dots {
+  to {
+    width: 1.25em;
+  }
+}
